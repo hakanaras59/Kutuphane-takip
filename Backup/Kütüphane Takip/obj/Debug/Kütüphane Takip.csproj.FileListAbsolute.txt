@@ -1,0 +1,17 @@
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\bin\Debug\Kütüphane Takip.exe.config
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\bin\Debug\kütüphane.accdb
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\bin\Debug\ogrncilist.accdb
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\bin\Debug\Kütüphane Takip.exe
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\bin\Debug\Kütüphane Takip.pdb
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form1.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form2.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form3.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form4.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form5.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form6.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Form7.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane_Takip.Properties.Resources.resources
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane Takip.csproj.GenerateResource.Cache
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane Takip.exe
+C:\Users\Ogün\Desktop\Kütüphane Takipp\Backup\Kütüphane Takip\obj\Debug\Kütüphane Takip.pdb

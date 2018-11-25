@@ -1,0 +1,890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1A89E5F-B106-43CB-83B6-84B085D46305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kütüphane_Takip</RootNamespace>
+    <AssemblyName>Kütüphane Takip</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kütüphaneDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kütüphaneDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogrncilistDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ogrncilistDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sifreDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="kütüphaneDataSet.xsc">
+      <DependentUpon>kütüphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet.xss">
+      <DependentUpon>kütüphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet1.xsc">
+      <DependentUpon>kütüphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet1.xss">
+      <DependentUpon>kütüphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet10.xsc">
+      <DependentUpon>kütüphaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet10.xss">
+      <DependentUpon>kütüphaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet11.xsc">
+      <DependentUpon>kütüphaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet11.xss">
+      <DependentUpon>kütüphaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet12.xsc">
+      <DependentUpon>kütüphaneDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet12.xss">
+      <DependentUpon>kütüphaneDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet13.xsc">
+      <DependentUpon>kütüphaneDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet13.xss">
+      <DependentUpon>kütüphaneDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet14.xsc">
+      <DependentUpon>kütüphaneDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet14.xss">
+      <DependentUpon>kütüphaneDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet15.xsc">
+      <DependentUpon>kütüphaneDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet15.xss">
+      <DependentUpon>kütüphaneDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet16.xsc">
+      <DependentUpon>kütüphaneDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet16.xss">
+      <DependentUpon>kütüphaneDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet17.xsc">
+      <DependentUpon>kütüphaneDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet17.xss">
+      <DependentUpon>kütüphaneDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet18.xsc">
+      <DependentUpon>kütüphaneDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet18.xss">
+      <DependentUpon>kütüphaneDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet19.xsc">
+      <DependentUpon>kütüphaneDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet19.xss">
+      <DependentUpon>kütüphaneDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet2.xsc">
+      <DependentUpon>kütüphaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet2.xss">
+      <DependentUpon>kütüphaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet20.xsc">
+      <DependentUpon>kütüphaneDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet20.xss">
+      <DependentUpon>kütüphaneDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet21.xsc">
+      <DependentUpon>kütüphaneDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet21.xss">
+      <DependentUpon>kütüphaneDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet22.xsc">
+      <DependentUpon>kütüphaneDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet22.xss">
+      <DependentUpon>kütüphaneDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet23.xsc">
+      <DependentUpon>kütüphaneDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet23.xss">
+      <DependentUpon>kütüphaneDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet24.xsc">
+      <DependentUpon>kütüphaneDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet24.xss">
+      <DependentUpon>kütüphaneDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet25.xsc">
+      <DependentUpon>kütüphaneDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet25.xss">
+      <DependentUpon>kütüphaneDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet26.xsc">
+      <DependentUpon>kütüphaneDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet26.xss">
+      <DependentUpon>kütüphaneDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet27.xsc">
+      <DependentUpon>kütüphaneDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet27.xss">
+      <DependentUpon>kütüphaneDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet3.xsc">
+      <DependentUpon>kütüphaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet3.xss">
+      <DependentUpon>kütüphaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet4.xsc">
+      <DependentUpon>kütüphaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet4.xss">
+      <DependentUpon>kütüphaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet5.xsc">
+      <DependentUpon>kütüphaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet5.xss">
+      <DependentUpon>kütüphaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet6.xsc">
+      <DependentUpon>kütüphaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet6.xss">
+      <DependentUpon>kütüphaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet7.xsc">
+      <DependentUpon>kütüphaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet7.xss">
+      <DependentUpon>kütüphaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet8.xsc">
+      <DependentUpon>kütüphaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet8.xss">
+      <DependentUpon>kütüphaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet9.xsc">
+      <DependentUpon>kütüphaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="kütüphaneDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kütüphaneDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kütüphaneDataSet9.xss">
+      <DependentUpon>kütüphaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet.xsc">
+      <DependentUpon>ogrncilistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet.xss">
+      <DependentUpon>ogrncilistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet1.xsc">
+      <DependentUpon>ogrncilistDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet1.xss">
+      <DependentUpon>ogrncilistDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet10.xsc">
+      <DependentUpon>ogrncilistDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet10.xss">
+      <DependentUpon>ogrncilistDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet11.xsc">
+      <DependentUpon>ogrncilistDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet11.xss">
+      <DependentUpon>ogrncilistDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet12.xsc">
+      <DependentUpon>ogrncilistDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet12.xss">
+      <DependentUpon>ogrncilistDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet13.xsc">
+      <DependentUpon>ogrncilistDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet13.xss">
+      <DependentUpon>ogrncilistDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet14.xsc">
+      <DependentUpon>ogrncilistDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet14.xss">
+      <DependentUpon>ogrncilistDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet15.xsc">
+      <DependentUpon>ogrncilistDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet15.xss">
+      <DependentUpon>ogrncilistDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet2.xsc">
+      <DependentUpon>ogrncilistDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet2.xss">
+      <DependentUpon>ogrncilistDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet3.xsc">
+      <DependentUpon>ogrncilistDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet3.xss">
+      <DependentUpon>ogrncilistDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet4.xsc">
+      <DependentUpon>ogrncilistDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet4.xss">
+      <DependentUpon>ogrncilistDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet5.xsc">
+      <DependentUpon>ogrncilistDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet5.xss">
+      <DependentUpon>ogrncilistDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet6.xsc">
+      <DependentUpon>ogrncilistDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet6.xss">
+      <DependentUpon>ogrncilistDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet7.xsc">
+      <DependentUpon>ogrncilistDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet7.xss">
+      <DependentUpon>ogrncilistDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet8.xsc">
+      <DependentUpon>ogrncilistDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet8.xss">
+      <DependentUpon>ogrncilistDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet9.xsc">
+      <DependentUpon>ogrncilistDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ogrncilistDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ogrncilistDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ogrncilistDataSet9.xss">
+      <DependentUpon>ogrncilistDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sifreDataSet.xsc">
+      <DependentUpon>sifreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sifreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sifreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sifreDataSet.xss">
+      <DependentUpon>sifreDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kütüphane.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ogrncilist.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sifre.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
